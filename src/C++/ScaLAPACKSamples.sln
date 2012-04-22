@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common.vcxproj", "{41968DD9-4FFD-4C71-A877-E7B60B524E90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrixmultiply", "matrixmultiply\matrixmultiply.vcxproj", "{035DE664-BB8C-4ACF-A90D-DB71CC96A2B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41968DD9-4FFD-4C71-A877-E7B60B524E90} = {41968DD9-4FFD-4C71-A877-E7B60B524E90}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cholesky", "cholesky\cholesky.vcxproj", "{B9062E21-0C21-49E3-BDC5-DE634CF0A161}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41968DD9-4FFD-4C71-A877-E7B60B524E90} = {41968DD9-4FFD-4C71-A877-E7B60B524E90}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lu", "lu\lu.vcxproj", "{01D6E233-C529-45A2-9828-259D806ACAD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41968DD9-4FFD-4C71-A877-E7B60B524E90} = {41968DD9-4FFD-4C71-A877-E7B60B524E90}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inverse", "inverse\inverse.vcxproj", "{AA83ABD3-CE61-44FF-86E9-2B6ED603CB35}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tcvstf:8080/tfs/tc
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = common\\common.vcxproj
+		SccProjectName1 = common
+		SccLocalPath1 = common
+		SccProjectUniqueName2 = matrixmultiply\\matrixmultiply.vcxproj
+		SccProjectName2 = matrixmultiply
+		SccLocalPath2 = matrixmultiply
+		SccProjectUniqueName3 = cholesky\\cholesky.vcxproj
+		SccProjectName3 = cholesky
+		SccLocalPath3 = cholesky
+		SccProjectUniqueName4 = lu\\lu.vcxproj
+		SccProjectName4 = lu
+		SccLocalPath4 = lu
+		SccProjectUniqueName5 = inverse\\inverse.vcxproj
+		SccProjectName5 = inverse
+		SccLocalPath5 = inverse
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41968DD9-4FFD-4C71-A877-E7B60B524E90}.Debug|x64.ActiveCfg = Debug|x64
+		{41968DD9-4FFD-4C71-A877-E7B60B524E90}.Debug|x64.Build.0 = Debug|x64
+		{035DE664-BB8C-4ACF-A90D-DB71CC96A2B2}.Debug|x64.ActiveCfg = Debug|x64
+		{035DE664-BB8C-4ACF-A90D-DB71CC96A2B2}.Debug|x64.Build.0 = Debug|x64
+		{B9062E21-0C21-49E3-BDC5-DE634CF0A161}.Debug|x64.ActiveCfg = Debug|x64
+		{B9062E21-0C21-49E3-BDC5-DE634CF0A161}.Debug|x64.Build.0 = Debug|x64
+		{01D6E233-C529-45A2-9828-259D806ACAD4}.Debug|x64.ActiveCfg = Debug|x64
+		{01D6E233-C529-45A2-9828-259D806ACAD4}.Debug|x64.Build.0 = Debug|x64
+		{AA83ABD3-CE61-44FF-86E9-2B6ED603CB35}.Debug|x64.ActiveCfg = Debug|x64
+		{AA83ABD3-CE61-44FF-86E9-2B6ED603CB35}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
